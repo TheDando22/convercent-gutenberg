@@ -1,0 +1,87 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# WP Core #
+######################
+# ignore everything in the root except :
+# "wp-content" directory
+# "iframes" directory
+
+/*
+!wp-content/
+!iframes/
+
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.bak
+*.swp
+
+# editor config
+.vscode
+
+# ignore everything in the "wp-content" directory, except:
+# "plugins" directory
+# "themes" directory
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+# ignore files added to theme via gulp process
+wp-content/themes/node_modules
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!README.md
+!CHANGELOG.md
+!package.json
+
+# track favicon files, if they exist
+!android-chrome-*.png
+!apple-touch-icon*.png
+!browserconfig.xml
+!favicon*.png
+!favicon*.ico
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+
+# WPEngine specific #
+######################
+.smushit-status
+.gitattributes
+_wpeprivate

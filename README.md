@@ -39,7 +39,6 @@ Download and install the WordPress CLI (Command Line Interface) using the link b
 
 [WP CLI - Installing](http://wp-cli.org/#installing)
 
-
 ### Getting started guide  
 To start pushing and pulling to the remote server with git, follow the istructions in the link below:
 
@@ -54,43 +53,13 @@ git clone git@github.com:Convercent/corporate-website.git public
 ```
 
 
-### Download wordpress
-Navigate to the `public` directory and download WordPress using the CLI. 
-
 ```
-cd public
-wp core download
-```
-
-
-### Run the build script
-The build script and its accompanying files in the `.build` directory will handle the following:
-
-* import a backup of the production database
-* replace productions URLs with local equivalent
-* copy `wp-config.php` into the root of the wp environment
-* remove the http post processing configuration from the database (which, if not removed, will redirect your local url to the prod url)
-
-You’ll have to set the build script as executable before you can run it:
-
-```
-chmod u+x .build/build-local.sh
-.build/build-local.sh
-```
-
-As this script runs you will see several sql errors output, but don’t worry. It should wrap up shortly and output:
-
-```
-all done - happy developing :)
+If you followed instructions in the getting start guide, then all done - happy developing :)
 ```
 
 
 ### Add uploads folder from site backup
 Copy the uploads folder (replacing the existing uploads folder) into `wp-content`.
-
-
-### Visit your local url
-You’re now ready to try out your new local environment by visiting `http://192.168.33.10`
 
 
 ## Why are certain things missing from this repo?

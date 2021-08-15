@@ -39,7 +39,6 @@ Download and install the WordPress CLI (Command Line Interface) using the link b
 
 [WP CLI - Installing](http://wp-cli.org/#installing)
 
-w
 ### Getting started guide  
 To start pushing and pulling to the remote server with git, follow the istructions in the link below:
 
